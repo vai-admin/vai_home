@@ -1,11 +1,258 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velocity Automation, LLC | Next-Gen Supply Chain Intelligence</title>
-    
+    <!-- The CSS styles from Part 2 will go directly below this line -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  this is a test
+
+    <header>
+        <a href="#" class="logo">Velocity Automation, LLC</a>
+        <nav>
+            <a href="#mission">Mission</a>
+            <a href="#understanding">Understanding</a>
+            <a href="#services">Services</a>
+			<a href="#whyvelocity">Why Velocity Automation?</a>
+			<a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Smarter Supply Chains. <br><span>Faster Results.</span></h1>
+            <p>We provide intelligent Supply Chain information management solutions for Government and Commercial customers.</p>
+            
+            <!--div class="tracker-box" id="tracking">
+                <input type="text" placeholder="Enter shipment or tracking ID...">
+                <button onclick="alert('Demo: Tracking lookup initiated!')">Track Status</button>
+            </div-->
+        </section>
+		<!-- Replace the existing services section with this version -->
+		<section class="services">
+	        
+		    <!-- Unified Ecosystem Container -->
+		    <div class="ecosystem-flow">
+		        <div class="flow-step" id="mission">
+		            <div class="flow-marker"></div>
+		            <div class="flow-content">
+					    <h2 class="category-heading">Our Mission</h2>
+					    <!--p class="category-description">To provide efficient solutions that seamlessly integrate Warehouse and Inventory Management with Parts Ordering capabilities — empowering our customers to operate smarter, faster, and with greater confidence.</p-->
+                    <div class="grid">
+						<div class="card full-width-card active">
+	                        <!--div class="card-header">
+	                            <h3>Overview</h3>
+	                        </div-->
+	                        <div class="card-details">
+				                <p class="wall-of-text">
+				                    <strong></strong> 
+									Provide efficient solutions that seamlessly integrate Warehouse and Inventory Management with Parts Ordering capabilities — empowering our customers to operate smarter, faster, and with greater confidence.
+				                </p>
+	                        </div>
+	                    </div>	
+						
+	                    <div class="card full-width-card" onclick="toggleCard(this)">
+	                        <div class="card-header">
+	                            <h3>Driven by technology. Guided by expertise. Committed to your mission.</h3>
+	                        </div>
+	                        <p>From initial assessment through full deployment, Velocity Automation stands beside you at every stage — delivering measurable results for operations of every scale.</p>
+	                    </div>
+					</div>
+					
+					</div>
+				</div>
+					
+		        <div class="flow-step" id="understanding">
+		            <div class="flow-marker"></div>
+		            <div class="flow-content">	
+		                <h3 class="category-heading">We Understand Your Challenges</h3>
+		                <!--p class="category-description">Running warehouse operations efficiently is no small feat. Whether you're managing customer inventory demands across multiple locations, coordinating complex logistics under tight deadlines, or struggling with disconnected systems that slow your team down — you need a partner who truly understands the operational pressure you face.
+										At Velocity Automation, we've been there. We know what it means when every minute counts and margins are razor thin. That's why we deliver tailored supply chain management solutions powered by the latest technology — designed to integrate seamlessly with your existing operations.	</p-->
+		                <div class="grid">
+		                    <div class="card full-width-card active">
+		                        <!--div class="card-header">
+		                            <h3>Overview</h3>
+		                        </div-->
+		                        <div class="card-details">
+					                <p class="wall-of-text">
+					                    <strong></strong> 
+										Running warehouse operations efficiently is no small feat. Whether you're managing customer inventory demands across multiple locations, coordinating complex logistics under tight deadlines, or struggling with disconnected systems that slow your team down — you need a partner who truly understands the operational pressure you face.
+										At Velocity Automation, we've been there. We know what it means when every minute counts and margins are razor thin. That's why we deliver tailored supply chain management solutions powered by the latest technology — designed to integrate seamlessly with your existing operations.									
+					                </p>
+		                        </div>
+		                    </div>
+		                    
+				            <div class="card active">
+		                        <div class="card-header">
+		                            <h3>Process</h3>
+		                        </div>
+		                        <!--p>We specialize in integrating</p-->
+				                <div class="card-details">
+			                		<p class="wall-of-text">
+										Our experts guide your organization from assessment through implementation — leveraging <strong>Software, Artificial Intelligence, Drone Technology,</strong> and custom automated solutions to resolve your most complex operational challenges.
+									</p>
+				                </div>
+				            </div>
+							
+				            <div class="card active">
+		                        <div class="card-header">
+		                            <h3>How We Solve It</h3>
+		                        </div>		                        
+				                <div class="card-details">
+									<p>We specialize in integrating:</p><br/>
+			                		<ul>
+					                    <li><strong>Warehouse Management Systems (WMS)</strong></li>
+					                    <li><strong>Yard Management Systems (YMS)</strong></li>
+					                    <li><strong>Transportation Management Systems (TMS)</strong> </li>
+										<li><strong>Container Management Solutions</strong></li>
+										<li><strong>Inventory Management & Parts Ordering Applications</strong></li>
+					                </ul>
+				                </div>
+				            </div>							
+				            
+		                </div>
+						
+						<!--div class="card complex-card">
+						    <div class="card-header" onclick="toggleCard(this.parentElement)">
+						        <h3>Overview</h3>
+						        <span class="expand-icon">+</span>
+						    </div>
+						    <p>Running warehouse operations efficiently is no small feat.</p>
+
+						    <div class="card-details">						        
+						        <div class="tab-container">
+						            <div class="tab-headers">
+						                <button class="tab-btn active" onclick="switchTab(event, 'tab-overview')">Overview</button>
+						                <button class="tab-btn" onclick="switchTab(event, 'tab-specs')">Specialties</button>
+						                <button class="tab-btn" onclick="switchTab(event, 'tab-impact')">Experts</button>
+						            </div>
+
+						            <div class="tab-content active" id="tab-overview">
+						                <p class="wall-of-text">
+						                    <strong></strong> 
+											Running warehouse operations efficiently is no small feat. Whether you're managing customer inventory demands across multiple locations, coordinating complex logistics under tight deadlines, or struggling with disconnected systems that slow your team down — you need a partner who truly understands the operational pressure you face.
+											At Velocity Automation, we've been there. We know what it means when every minute counts and margins are razor thin. That's why we deliver tailored supply chain management solutions powered by the latest technology — designed to integrate seamlessly with your existing operations.									
+						                </p>
+						            </div>
+
+						            <div class="tab-content" id="tab-specs">
+						                <p class="wall-of-text">
+						                    We specialize in integrating:
+				                <ul>
+				                    <li><strong>Warehouse Management Systems (WMS)</strong></li>
+				                    <li><strong>Yard Management Systems (YMS)
+		</strong></li>
+				                    <li><strong>Transportation Management Systems (TMS)</strong> </li>
+									<li><strong>Container Management Solutions</strong></li>
+									<li><strong>Inventory Management & Parts Ordering Applications</strong></li>
+				                </ul>
+						                </p>
+						            </div>
+
+						            <div class="tab-content" id="tab-impact">
+						                <p class="wall-of-text">
+						                    <strong></strong> Our experts guide your organization from assessment through implementation — leveraging <strong>Software, Artificial Intelligence, Drone Technology,</strong> and custom automated solutions to resolve your most complex operational challenges.
+						                </p>
+						            </div>
+						        </div>
+						    </div>
+						</div-->
+						
+					</div>
+				</div>
+					
+		        <!-- STEP 1 BLOCK -->
+		        <div class="flow-step" id="services">
+		            <div class="flow-marker"></div>
+		            <div class="flow-content">
+		                <h3 class="category-heading">Our Services</h3>
+		                <!--p class="category-description">Our primary orchestration layers designed for high-throughput, multi-regional fleet and warehouse calculations.</p-->
+                		
+						<div class="grid">
+				            <div class="card active">
+		                        <div class="card-header">
+		                            <h3>Industries We Serve</h3>
+		                        </div>		                        
+				                <div class="card-details">
+									<p>Our team brings deep Supply Chain Management expertise across:</p><br/>
+			                		<ul>
+					                    <li><strong>Healthcare</strong></li>
+					                    <li><strong>Automotive</strong></li>
+					                    <li><strong>Government & Defense</strong> </li>
+										<li><strong>Commercial & Manufacturing</strong></li>
+					                </ul>
+				                </div>
+				            </div>
+						
+				            <div class="card active">
+		                        <div class="card-header">
+		                            <h3>What We Deliver</h3>
+		                        </div>		                        
+				                <div class="card-details">
+									<!--p>Our team brings deep Supply Chain Management expertise across:</p><br/-->
+			                		<ul>
+					                    <li><strong>Business Analysis</strong></li>
+					                    <li><strong>System Engineering</strong></li>
+					                    <li><strong>Software Engineering & Development</strong> </li>
+										<li><strong>Cybersecurity</strong></li>
+										<li><strong>Data Management & Governance</strong></li>
+										<li><strong>Software & System Architecture Design</strong></li>
+										<li><strong>Software Consulting</strong></li>
+					                </ul>
+				                </div>
+				            </div>
+						</div>
+		            </div>
+		        </div>
+
+		        
+
+		    </div>
+		</section>
+		
+		
+
+        <!-- Enterprise Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="section-title">Ready to transform your supply chain?</h2>
+            <p class="section-subtitle">Contact us today for a free consultation and discover how Velocity Automation can drive measurable improvements across your entire supply chain operation.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <!--p>Our solutions deploy natively alongside SAP, Oracle, and custom legacy infrastructures. Fill out the architecture checklist, and our logistics deployment specialists will respond within one business day.</p-->
+                    <p><strong>Address:</strong><br/>1902 Central Pkwy SW, Suite A, <br/>Decatur, AL 35601-6836</p>
+                    <p><strong>Email:</strong><br/>info@velocityautomationllc.com</p>
+                </div>
+                
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Demo Message Sent! Our systems team will contact you shortly.');">
+                        <div class="form-group">
+                            <label for="comp-name">Company Name</label>
+                            <input type="text" id="comp-name" required placeholder="Your Company">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" required placeholder="operations@yourcompany.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="msg">Notes</label>
+                            <textarea id="msg" rows="4" placeholder="Tell us about the scale of your operation, current software limitations, or custom deployment goals..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">I'm Ready</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Velocity Automation, LLC. All structural rights reserved.</p>
+    </footer>
+
+    <!-- The JavaScript code from Part 2 will go directly below this line -->
+    <script src="script.js"></script>
 </body>
 </html>
