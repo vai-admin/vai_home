@@ -739,3 +739,87 @@ footer {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
+/* TODO: cleanup any orphan classes from above
+
+/* Contact form validation */
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+
+main {margin-top: 0px;}
+
+/* --- Header Layout --- */
+header {
+  position: fixed; /* Keeps the entire nav bar at the top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Pushes logo to left, nav links to right */
+  align-items: center;
+  padding: 25px 5%; /* Adjusts side spacing */
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* --- Logo Styling --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.responsive-logo {
+  width: 200px; /* Targets your desired 200px width */
+  max-width: 100%;
+  height: auto; /* Scales proportionally */
+  display: block;
+}
+
+/* --- Navigation Links (Desktop) --- */
+nav {
+  display: flex;
+  gap: 20px; /* Spacing between your menu items */
+}
+
+/* --- Mobile View (Screens smaller than 768px) --- */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stacks the logo above the navigation links */
+    gap: 15px;
+    padding: 15px 2%;
+  }
+  
+.hero {margin-top: 40px;}
+
+  .logo-container {
+    width: 100%;
+    justify-content: center; /* Centers the logo horizontally on mobile */
+  }
+
+  .responsive-logo {
+    width: 180px; /* Slightly smaller scale for mobile screens */
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center; /* Centers the navigation links below the logo */
+    flex-wrap: wrap; /* Allows links to wrap to a new line if screen is narrow */
+    gap: 15px;
+  }
+}

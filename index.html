@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
     <title>Velocity Automation, LLC | Next-Gen Supply Chain Intelligence</title>
-    <!-- The CSS styles from Part 2 will go directly below this line -->
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">    
+	
+	<script defer type="module" src="script.js?version=1.11"></script>
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">Velocity Automation, LLC</a>
+        <!--a href="#" class="logo">Velocity Automation, LLC</a-->
+		<div class="logo-container">
+		  <img src="logo.png" alt="Website Logo" class="responsive-logo">
+		</div>
         <nav>
             <a href="#mission">Mission</a>
             <a href="#understanding">Understanding</a>
@@ -22,7 +28,7 @@
 
     <main>
         <section class="hero">
-            <h1>Smarter Supply Chains. <br><span>Faster Results.</span></h1>
+            <h1>Smarter Supply Chain Management. <br><span>Faster Results.</span></h1>
             <p>We provide intelligent Supply Chain information management solutions for Government and Commercial customers.</p>
             
             <!--div class="tracker-box" id="tracking">
@@ -207,7 +213,28 @@
 		            </div>
 		        </div>
 
-		        
+		        <div class="flow-step" id="why">
+		            <div class="flow-marker"></div>
+		            <div class="flow-content">
+		                <h3 class="category-heading">Why Velocity Automation?</h3>
+		                <!--p class="category-description">Our primary orchestration layers designed for high-throughput, multi-regional fleet and warehouse calculations.</p-->
+                		
+						<div class="grid">
+				            <div class="card active">		                                              
+				                <div class="card-details">
+			                		<ul>
+					                    <li><strong>Proven expertise across Government and Commercial supply chains</strong></li>
+					                    <li><strong>End-to-end solutions from strategy to deployment</strong></li>
+					                    <li><strong>AI-powered and drone-enabled automation capabilities</strong> </li>
+										<li><strong>Dedicated to security, compliance, and operational excellence</strong></li>
+										<li><strong>Flexible engagement models tailored to your needs</strong></li>
+					                </ul>
+				                </div>
+				            </div>
+							
+						</div>
+		            </div>
+		        </div>
 
 		    </div>
 		</section>
@@ -228,18 +255,18 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form onsubmit="event.preventDefault(); alert('Demo Message Sent! Our systems team will contact you shortly.');">
+                    <form id="contactForm" method="POST">
                         <div class="form-group">
                             <label for="comp-name">Company Name</label>
-                            <input type="text" id="comp-name" required placeholder="Your Company">
+                            <input type="text" id="comp-name" name="comp-name" required placeholder="Your Company">
                         </div>
                         <div class="form-group">
                             <label for="email">Work Email</label>
-                            <input type="email" id="email" required placeholder="operations@yourcompany.com">
+                            <input type="email" id="email" name="email" required placeholder="operations@yourcompany.com">
                         </div>
                         <div class="form-group">
                             <label for="msg">Notes</label>
-                            <textarea id="msg" rows="4" placeholder="Tell us about the scale of your operation, current software limitations, or custom deployment goals..."></textarea>
+                            <textarea id="msg" name="msg" rows="4" placeholder="Tell us about the scale of your operation, current software limitations, or custom deployment goals..."></textarea>
                         </div>
                         <button type="submit" class="submit-btn">I'm Ready</button>
                     </form>
@@ -251,8 +278,6 @@
     <footer>
         <p>&copy; 2026 Velocity Automation, LLC. All structural rights reserved.</p>
     </footer>
-
-    <!-- The JavaScript code from Part 2 will go directly below this line -->
-    <script src="script.js"></script>
+	
 </body>
 </html>
