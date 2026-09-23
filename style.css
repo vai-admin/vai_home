@@ -46,7 +46,7 @@ header {
 nav a {
     color: var(--text-muted);
     text-decoration: none;
-    margin-left: 2rem;
+    margin-left: clamp(2rem);
     transition: color 0.2s;
 }
 
