@@ -185,7 +185,7 @@ section {
 
 .card p {
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: clamp(0.95rem);
 }
 
 .contact-container {
@@ -736,7 +736,7 @@ footer {
 
 .card-summary {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem);
     margin-top: 0.5rem;
 }
 
@@ -798,7 +798,7 @@ nav {
 }
 
 /* --- Mobile View (Screens smaller than 768px) --- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   header {
     flex-direction: column; /* Stacks the logo above the navigation links */
     gap: 15px;
