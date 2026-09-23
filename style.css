@@ -798,7 +798,10 @@ nav {
 }
 
 /* --- Mobile View (Screens smaller than 768px) --- */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
+  h1 { font-size: 3.5rem; }
+  p { font-size: 1.15rem; }	
+	
   header {
     flex-direction: column; /* Stacks the logo above the navigation links */
     gap: 15px;
