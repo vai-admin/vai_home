@@ -44,8 +44,9 @@ async function handleContactFormSubmit(event) {
 	event.preventDefault(); // Stop the page refresh
 	
     const formData = new FormData(form);
-    formData.append("access_key", "bcbf2d2a-2aef-49d1-9034-b1f606085191");
-
+    //formData.append("access_key", "bcbf2d2a-2aef-49d1-9034-b1f606085191");
+	formData.append("access_key", "c7044a54-fe74-4bf5-8636-3773990eef8e");
+	
     const originalText = submitBtn.textContent;
 
     submitBtn.textContent = "Sending...";
